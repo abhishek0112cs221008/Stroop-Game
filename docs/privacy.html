@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Stroop Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.15) 0%, transparent 40%);
+            z-index: -1;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            flex: 1;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: #818cf8;
+            text-align: center;
+        }
+
+        .policy-content {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 24px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #c084fc;
+            margin: 2rem 0 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: #8b5cf6;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #818cf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gradient-bg"></div>
+
+    <header>
+        <a href="index.html" class="logo">Stroop</a>
+    </header>
+
+    <main>
+        <h1>Privacy Policy</h1>
+
+        <div class="policy-content">
+            <p>Your privacy is critically important to us. The Stroop Game is designed with a "Privacy First" mindset,
+                ensuring that your data stays exactly where it belongs: on your device.</p>
+
+            <h2>1. Data Collection</h2>
+            <p>We do <strong>not</strong> collect, store, or transmit any personal information. This includes but is not
+                limited to:</p>
+            <ul>
+                <li>Names, email addresses, or phone numbers.</li>
+                <li>Location data or IP addresses.</li>
+                <li>Contact lists or calendar information.</li>
+                <li>Device identifiers or usage statistics.</li>
+            </ul>
+
+            <h2>2. Local Storage</h2>
+            <p>All game-related data, including your coin balance, high scores, game statistics, and streak information,
+                is stored <strong>locally</strong> on your device using an encrypted local database (Hive). This data
+                never leaves your phone.</p>
+
+            <h2>3. Third-Party Services</h2>
+            <p>The app does not use any third-party analytics, tracking pixels, or advertising networks that could
+                monitor your behavior or collect your data.</p>
+
+            <h2>4. Data Deletion</h2>
+            <p>Because all data is stored locally, you have full control over it. Uninstalling the app from your device
+                will automatically delete all stored game data and preferences.</p>
+
+            <h2>5. Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
+                Privacy Policy on this page.</p>
+
+            <p style="margin-top: 3rem; font-size: 0.9rem; color: var(--text-muted);">Last Updated: February 28, 2026
+            </p>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Overview</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Stroop Game Team</p>
+    </footer>
+</body>
+
+</html>
